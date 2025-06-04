@@ -1,0 +1,110 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+body {
+    background-color: #ffffff;
+    font-family: "Montserrat";
+}
+
+.navbar {
+  background-color: #F8F6F1;
+}
+
+.nav-link {
+  color: black;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #3ec6de;
+}
+
+.btn-custom {
+  background-color: #013A63;
+  color: white;
+  border-radius: 6px;
+  padding: 6px 12px;
+}
+
+.navbar-brand {
+  color: #0d3b5f;
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: x-large;
+  gap: 6px;
+  transition: transform 0.5s ease, color 0.5s ease;
+}
+
+.navbar-brand:hover {
+  color: #021F3F;
+  transform: translateX(20px);
+}
+
+.navbar-brand img {
+  height: 60px;
+}
+
+.container-md {
+  margin-top: 4rem;
+}
+
+
+h2{
+  font-weight: 700;
+}
+
+footer{
+  margin-top: 5%;
+}
+
+p{
+  color: #000;
+  opacity: 75%;
+  font-weight: 400;
+}
+
+.img-fluid{
+  width: 100vw;
+  height: 70vh;
+  object-fit: cover;
+}
+
+.card {
+  border-radius: 16px;
+}
+
+#statisztika{
+  text-align: center;
+}
+
+input,
+select,
+textarea  {
+  padding: 10px 12px;
+  margin: 5px 8px 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #0077b6; /* tengerkékes kiemelés fókuszban */
+  box-shadow: 0 0 6px rgba(0, 119, 182, 0.3);
+}
+
+.modal-body{
+  text-align: center;
+}
+
+#szuro_delet{
+  display: flex;
+  justify-content: space-between; 
+}
+

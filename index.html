@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SailSwap</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="hajo.svg" alt="Logo"> SailSwap
+      </a>
+
+      <!-- Hamburger gomb -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+      </button>
+
+      <!-- Összehajtható rész -->
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <div class="ms-auto d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-3 mt-3 mt-lg-0">
+          <a href="adokveszek.html" class="btn btn-custom">Adok - Veszek</a>
+          <a class="nav-link" href="index.html"><i class="bi bi-house"></i> Főoldal</a>
+          <a class="nav-link" href="#"><i class="bi bi-book"></i> Rólunk</a>
+          <a class="nav-link" href="#"><i class="bi bi-chat-left"></i> Ügyfélszolgálat</a>
+
+          <!-- Dropdown menü -->
+          <div class="dropdown">
+            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-person-circle"></i>&nbsp;Fiók
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Bejelentkezés</a></li>
+              <li><a class="dropdown-item" href="#">Regisztráció</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Profilom</a></li>
+              <li><a class="dropdown-item" href="#">Kijelentkezés</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+      <img src="/kepek/SailSwap.png" class="img-fluid" alt="Responsive image">
+
+      <div class="container-md">
+        <h2>Adok - veszek</h2>
+        <p>Keress, kínálj vagy cserélj vitorlásokat és hajós felszereléseket egy helyen! A SailSwap lehetőséget biztosít mind a magánszemélyek, mind a kereskedők számára, hogy gyorsan és egyszerűen találjanak új gazdát hajóiknak vagy alkatrészeiknek. Nálunk könnyedén böngészhetsz a hirdetések között, vagy feltöltheted saját ajánlatod pár kattintással.
+        </p>
+        <button type="button" class="btn btn-dark" onclick="location.href='./adokveszek.html'">Megnézem!</button>
+      </div>
+
+      <div class="container-md">
+        <h2>Miért válasszon minket?</h2>
+        <div class="card-group">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><i class="bi bi-shield-shaded"></i> Megbizhatóság</h5>
+              <p class="card-text">Platformunkon kizárólag ellenőrzött felhasználók hirdethetnek, így biztos lehet abban, hogy valódi ajánlatokkal találkozik. Célunk, hogy egy biztonságos, átlátható piacteret hozzunk létre a hajózás iránt érdeklődőknek.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><i class="bi bi-speedometer2"></i> Gyorsaság</h5>
+              <p class="card-text">Hirdetés feladása mindössze néhány kattintás – nincs szükség bonyolult űrlapokra vagy hosszadalmas jóváhagyásra. Az érdeklődők azonnal kapcsolatba léphetnek Önnel, így gyorsan lezárhatja az üzletet.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><i class="bi bi-currency-exchange"></i> Alacsony Közvetítői Ár</h5>
+              <p class="card-text">Nálunk nincsenek rejtett költségek vagy magas jutalékok. A SailSwap lehetővé teszi, hogy közvetlenül a vevőkkel vagy eladókkal kommunikáljon, így Ön több pénzt tarthat meg a zsebében.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-md">
+          <h2>Legújabb feltöltések:</h2>
+          <div class="row row-cols-1 row-cols-md-3 g-4" id="feltoltesek_row">
+            
+          </div>
+
+        <div class="container-md">
+          <h2>Statisztikáink:</h2>
+          <div id="statisztika">
+             <h3 id="hajok_szama">Megvásárolható hajók száma: </h3>
+             <h3 id="hajok_ara">Átlagos hajó ár: </h3>
+          </div>
+        </div>
+
+        <!-- LÁBLÉC -->
+        <div class="container">
+          <footer class="py-5">
+            <div class="row">
+        
+              <!-- Section 1 -->
+              <div class="col-6 col-md-2 mb-3">
+                <h5><b>Linkek</b></h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary">GYIK</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary">Rólunk</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary">Kapcsolat</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary">Adok - Veszek</a>
+                  </li>
+                </ul>
+              </div>
+        
+              <!-- Section 2 -->
+              <div class="col-6 col-md-2 mb-3">
+                <h5><b>Kapcsolat</b></h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary">info@sailswap.com</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary">Tel. +36709452990</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary">8200, Veszprém (Belváros) Óváros tér 7.</a>
+                  </li>
+                </ul>
+              </div>
+        
+              <!-- Section 3 -->
+              <div class="col-6 col-md-2 mb-3">
+                
+              </div>
+        
+              <!-- hirlevel -->
+              <div class="col-md-5 offset-md-1 mb-3">
+                <form>
+                  <h5>Iratkozz fel hírlevelünkre!</h5>
+                  <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                    <label for="newsletter1" class="visually-hidden">Email cím</label>
+                    <input id="newsletter1" type="email" class="form-control" placeholder="Email cím">
+                    <button class="btn btn-primary" type="button">Feliratkozás</button>
+                  </div>
+                </form>
+              </div>
+        
+            </div>
+        
+            <!-- Footer Bottom -->
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+              <p>© 2025 Sailswap, Inc. Minden jog fenntartva!</p>
+              <p>Készítette: Heizer Marcell</p>
+            </div>
+          </footer>
+        </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

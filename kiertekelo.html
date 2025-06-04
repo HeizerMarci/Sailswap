@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SailSwap</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="kiertekelo.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="hajo.svg" alt="Logo"> SailSwap
+    </a>
+
+    <!-- Hamburger gomb -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+      aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bi bi-list"></i>
+    </button>
+
+    <!-- Összehajtható rész -->
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <div class="ms-auto d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-3 mt-3 mt-lg-0">
+        <a href="adokveszek.html" class="btn btn-custom">Adok - Veszek</a>
+        <a class="nav-link" href="index.html"><i class="bi bi-house"></i> Főoldal</a>
+        <a class="nav-link" href="#"><i class="bi bi-book"></i> Rólunk</a>
+        <a class="nav-link" href="#"><i class="bi bi-chat-left"></i> Ügyfélszolgálat</a>
+
+        <!-- Dropdown menü -->
+        <div class="dropdown">
+          <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-person-circle"></i>&nbsp;Fiók
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Bejelentkezés</a></li>
+            <li><a class="dropdown-item" href="#">Regisztráció</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Profilom</a></li>
+            <li><a class="dropdown-item" href="#">Kijelentkezés</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+  <div class="container-md" id="bekuldot_info">
+    <h2>Üzenetét továbbitóttuk az eladonak!</h2>
+    <p>Üzenet részletei: </p>
+    <div id="uzenet">
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
